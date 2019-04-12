@@ -1,0 +1,206 @@
+img {
+  transition: opacity .3s ease-in;
+}
+img:hover {
+  opacity: .8;
+}
+.atf {
+  height: 95vh;
+  font-family: 'Nunito', sans-serif;
+}
+.btf a:link, .btf a:visited {
+  color: #7A33AB;
+  text-decoration: underline;
+  transition: all .2s ease-out;
+}
+.btf a:hover, .btf a:active {
+  color: #4E3690;
+  text-decoration: none;
+}
+nav {
+  z-index: 2;
+  background-color: rgba(0,0,0,0.3);
+}
+.logo {
+  width: 125px;
+  height: auto;
+  opacity: .8;
+}
+nav a {
+  text-transform: uppercase;
+}
+.btf h1, .btf h2, .btf h3, .btf h4, .btf h5 {
+  color: #4e3690;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  margin-bottom: .25em;
+  padding-bottom: 0;
+}
+.btf {
+  color: #777;
+  font-family: 'Nunito', sans-serif;
+}
+.copy {
+  padding-top: 1rem;
+}
+.contact {
+  padding: .75em;
+  background-color: #7a33ab;
+  color: #DFDFDF;
+}
+.lead {
+  color: #555;
+  padding: 1em;
+  border-left: 4px solid #7a33ab;
+  margin-left: .25em;
+}
+.contact h1, .contact h2, .contact h3, .contact h4, .contact h5, .contact h6 {
+  color: #CCC;
+  margin-bottom: .25em;
+  padding-bottom: 0;
+}
+.contact hr {
+  border-color: #CCC;
+}
+.btn-submit {
+  background-color: #bea3dd;
+  color: #333;
+  opacity: 1;
+  border-radius: 200px;
+  border: 1px solid #DFDFDF;
+}
+.btn-submit:hover {
+  background-color: #4c1489;
+  color: #CCC;
+  border: 1px solid #bea3dd;
+}
+a.nav-link.btn:link, a.nav-link.btn:visited {
+  padding: .25em .5em;
+  border-radius: 200px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #7a33ab;
+  color: #7a33ab;
+}
+a.nav-link.btn:hover, a.nav-link.btn:active {
+  text-decoration: none;
+  background-color: #7a33ab;
+  color: #DDD;
+}
+#bkgr {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	background: url('pix/model.png') no-repeat;
+	background-size: cover;
+}
+.cta {
+  animation: appear 4.85s ease-in;
+}
+.cta h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+}
+.sub-head {
+  font-size: 45% !important;
+  font-family: 'Nunito', san-serif;
+  opacity: .5;
+  text-align: center;
+}
+.arrow:link, .arrow:visited {
+  margin-top: 1em;
+  color: #FFF;
+  opacity: .5;
+  transition: all .2s ease-out;
+}
+.arrow:hover, .arrow:active {
+  opacity: .9;
+}
+.cta h1 {
+  text-align: center;
+  font-size: 105%;
+}
+.fb, .in, .tw, .ln {
+  cursor: pointer;
+}
+.card {
+  border-color: #bea3dd;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+		opacity: 0;
+  }
+  100% {
+  	transform: scale(1);
+    opacity: 1;
+  }
+}
+/*--Hang: credit to Ian Lunn's Hover.css @ http://ianlunn.github.io/Hover/--*/
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, 6;
+  animation-iteration-count: 1, 6;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(8px);
+  }
+  100% {
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(8px);
+  }
+  100% {
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+  }
+}
